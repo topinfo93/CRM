@@ -1,6 +1,0 @@
-@extends('layouts.index-layout')
-
-@section('content')
-   User: .....
-   Permision: .....
-@endsection
