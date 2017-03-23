@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+// login 
+Route::get('/auth','authController@index');
+
+// show permission
+Route::get('/index', function () {
+    return view('index');
+});

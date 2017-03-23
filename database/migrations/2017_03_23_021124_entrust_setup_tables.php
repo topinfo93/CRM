@@ -12,7 +12,7 @@ class EntrustSetupTables extends Migration
     public function up()
     {
         // Create table for storing roles
-        Schema::defaultStringLength(191);
+        // Schema::defaultStringLength(191);
         Schema::create('roles', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->unique();
