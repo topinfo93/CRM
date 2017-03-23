@@ -15,10 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// login 
-Route::get('/auth','authController@index');
+Auth::routes();
 
-// show permission
-Route::get('/index', function () {
-    return view('index');
-});
+Route::get('/home', 'HomeController@index');
